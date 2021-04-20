@@ -8,6 +8,8 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
 COPY ["ESShopAPI/ESShopAPI.csproj", "ESShopAPI/"]
+COPY ["ESShopBL/ESShopBL.csproj", "ESShopBL/"]
+COPY ["ESShopDAL/ESShopDAL.csproj", "ESShopDAL/"]
 RUN dotnet restore "ESShopAPI/ESShopAPI.csproj"
 COPY . .
 WORKDIR "/src/ESShopAPI"

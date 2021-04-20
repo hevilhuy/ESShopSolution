@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESShopAPI", "ESShopAPI\ESShopAPI.csproj", "{CB3A0D29-FB7A-41BF-858A-920ACAF6BB64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ESShopAPI", "ESShopAPI\ESShopAPI.csproj", "{CB3A0D29-FB7A-41BF-858A-920ACAF6BB64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESShopDAL", "ESShopDAL\ESShopDAL.csproj", "{36828712-6481-44D5-911F-18DE00065E88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ESShopDAL", "ESShopDAL\ESShopDAL.csproj", "{36828712-6481-44D5-911F-18DE00065E88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESShopBL", "ESShopBL\ESShopBL.csproj", "{E1B76541-9136-4282-B538-5A2EE9496F92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ESShopBL", "ESShopBL\ESShopBL.csproj", "{E1B76541-9136-4282-B538-5A2EE9496F92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESShopUI", "ESShopUI\ESShopUI.csproj", "{69CE5BBB-943B-4448-9C76-FBB7D5A7B20F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ESShopUI", "ESShopUI\ESShopUI.csproj", "{69CE5BBB-943B-4448-9C76-FBB7D5A7B20F}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D0E55E9A-DF6C-47E4-8E4C-E35A7C1073C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{69CE5BBB-943B-4448-9C76-FBB7D5A7B20F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69CE5BBB-943B-4448-9C76-FBB7D5A7B20F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69CE5BBB-943B-4448-9C76-FBB7D5A7B20F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0E55E9A-DF6C-47E4-8E4C-E35A7C1073C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0E55E9A-DF6C-47E4-8E4C-E35A7C1073C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0E55E9A-DF6C-47E4-8E4C-E35A7C1073C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0E55E9A-DF6C-47E4-8E4C-E35A7C1073C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,40 @@
+version: '3.4'
+
+services:
+    esshopui:
+        container_name: esshopui
+        image: ${DOCKER_REGISTRY-}esshopui
+        build:
+            context: .
+            dockerfile: ESShopUI/Dockerfile
+
+    esshopapi:
+        container_name: esshopapi
+        image: ${DOCKER_REGISTRY-}esshopapi
+        build:
+            context: .
+            dockerfile: ESShopAPI/Dockerfile
+        networks:
+            - internal-network
+        ports:
+            - 5000:80
+            - 5001:443
+
+    sql_server:
+        container_name: SQL_SERVER_2019
+        image: mcr.microsoft.com/mssql/server:2019-latest
+        environment:
+            - ACCEPT_EULA=Y
+            - SA_PASSWORD=Monster@2998
+        networks: 
+            - internal-network
+        volumes:
+            - sql-disk:/mssql
+        ports:
+            - 1434:1433
+
+networks:
+    internal-network:
+
+volumes:
+    sql-disk:
