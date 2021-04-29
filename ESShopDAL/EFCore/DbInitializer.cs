@@ -10,7 +10,11 @@ namespace ESShopDAL.EFCore
     {
         public static async Task Initialize(ESShopContext context)
         {
-            context.Database.EnsureCreated();
+            if(!context.Database.EnsureCreated())
+			{
+                context.Database.Migrate();
+			}
+
             await InitProduct(context);
             await InitOrder(context);
             await InitProductLine(context);
